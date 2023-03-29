@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn.DDD.API", "Hahn_DDD.API\Hahn.DDD.API.csproj", "{CC3423DC-4A80-4F66-91EF-28D2AF336532}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D4CC38D4-C2EB-4B50-BF26-FDF2F616BB1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{617980C4-B133-458B-AA25-493387E7514A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{16D11207-8230-439B-BFD1-D729080A99F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn.DDD.Domain", "Hahn_DDD.Domain\Hahn.DDD.Domain.csproj", "{CF66D963-4B55-4962-8615-A3D4CB81774D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BFD4791F-3C06-4ED8-925E-B8D17D23D6BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn.DDD.Infraestructure", "Hahn.DDD.Infraestructure\Hahn.DDD.Infraestructure.csproj", "{175F7020-2AED-485E-946C-8CFF03DACB14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC3423DC-4A80-4F66-91EF-28D2AF336532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3423DC-4A80-4F66-91EF-28D2AF336532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3423DC-4A80-4F66-91EF-28D2AF336532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3423DC-4A80-4F66-91EF-28D2AF336532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF66D963-4B55-4962-8615-A3D4CB81774D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF66D963-4B55-4962-8615-A3D4CB81774D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF66D963-4B55-4962-8615-A3D4CB81774D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF66D963-4B55-4962-8615-A3D4CB81774D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175F7020-2AED-485E-946C-8CFF03DACB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175F7020-2AED-485E-946C-8CFF03DACB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175F7020-2AED-485E-946C-8CFF03DACB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175F7020-2AED-485E-946C-8CFF03DACB14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC3423DC-4A80-4F66-91EF-28D2AF336532} = {617980C4-B133-458B-AA25-493387E7514A}
+		{D4CC38D4-C2EB-4B50-BF26-FDF2F616BB1F} = {BFD4791F-3C06-4ED8-925E-B8D17D23D6BB}
+		{617980C4-B133-458B-AA25-493387E7514A} = {BFD4791F-3C06-4ED8-925E-B8D17D23D6BB}
+		{16D11207-8230-439B-BFD1-D729080A99F0} = {BFD4791F-3C06-4ED8-925E-B8D17D23D6BB}
+		{CF66D963-4B55-4962-8615-A3D4CB81774D} = {16D11207-8230-439B-BFD1-D729080A99F0}
+		{175F7020-2AED-485E-946C-8CFF03DACB14} = {D4CC38D4-C2EB-4B50-BF26-FDF2F616BB1F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AB3DC4E-2F59-4A39-8067-D755ACC82CA0}
+	EndGlobalSection
+EndGlobal
