@@ -1,5 +1,4 @@
 ﻿using Hahn.DDD.Domain.Common;
-using System.Linq.Expressions;
 
 namespace Hahn.DDD.Application.Contracts.Persistence
 {
