@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Hahn.DDD.Application.Contracts.Persistence;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -11,15 +12,17 @@ namespace Hahn.DDD.Application.Features.Users.Queries.GetUserList
     public class GetUserListQueryHandler : IRequestHandler<GetUserListQuery, List<UserVm>>
     {
         private readonly IMapper _mapper;
-        //constructor and injecton of userrepository and d
+        private readonly IUserRepository _userRepository;
 
-        public GetUserListQueryHandler(IMapper mapper)
+        public GetUserListQueryHandler(IMapper mapper, IUserRepository userRepository)
         {
             _mapper = mapper;
+            _userRepository = userRepository;
         }
-        public Task<List<UserVm>> Handle(GetUserListQuery request, CancellationToken cancellationToken)
+        public async Task<List<UserVm>> Handle(GetUserListQuery request, CancellationToken cancellationToken)
         {
-            return null;
+            var userList = await _userRepository.GetAllAsync();
+            return _mapper.Map<List<UserVm>>(userList);
         }
     }
 }
