@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hahn.DDD.Application\Hahn.DDD.Application.csproj" />
+    <ProjectReference Include="..\Hahn.DDD.Infrastructure\Hahn.DDD.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

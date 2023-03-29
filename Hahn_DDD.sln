@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BFD4791F-3C0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn.DDD.Application", "Hahn.DDD.Application\Hahn.DDD.Application.csproj", "{4698D5FE-4684-4065-83F2-A723BF1A4F09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn.DDD.Infrastructure", "Hahn.DDD.Infrastructure\Hahn.DDD.Infrastructure.csproj", "{9C8825C0-6E6E-485D-B39A-9D79714DFDC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{4698D5FE-4684-4065-83F2-A723BF1A4F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4698D5FE-4684-4065-83F2-A723BF1A4F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4698D5FE-4684-4065-83F2-A723BF1A4F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8825C0-6E6E-485D-B39A-9D79714DFDC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8825C0-6E6E-485D-B39A-9D79714DFDC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8825C0-6E6E-485D-B39A-9D79714DFDC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8825C0-6E6E-485D-B39A-9D79714DFDC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{16D11207-8230-439B-BFD1-D729080A99F0} = {BFD4791F-3C06-4ED8-925E-B8D17D23D6BB}
 		{CF66D963-4B55-4962-8615-A3D4CB81774D} = {16D11207-8230-439B-BFD1-D729080A99F0}
 		{4698D5FE-4684-4065-83F2-A723BF1A4F09} = {16D11207-8230-439B-BFD1-D729080A99F0}
+		{9C8825C0-6E6E-485D-B39A-9D79714DFDC2} = {D4CC38D4-C2EB-4B50-BF26-FDF2F616BB1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AB3DC4E-2F59-4A39-8067-D755ACC82CA0}
