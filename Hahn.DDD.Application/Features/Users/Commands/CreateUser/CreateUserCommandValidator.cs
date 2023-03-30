@@ -15,7 +15,7 @@ namespace Hahn.DDD.Application.Features.Users.Commands.CreateUser
                                 .NotNull()
                                 .MaximumLength(50).WithMessage("Name cannot be bigger than 50 characters");
 
-            RuleFor(p => p.Company).NotEmpty().WithMessage("Company name cannot be empty");
+            RuleFor(p => p.Position).NotEmpty().WithMessage("Position name cannot be empty");
             RuleFor(p => p.Company).NotEmpty().WithMessage("Company name cannot be empty");
 
         }
