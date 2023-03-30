@@ -8,8 +8,8 @@ namespace Hahn.DDD.Infrastructure.Persistence
     public class UserDbContext : DbContext
     {
         public UserDbContext(DbContextOptions<UserDbContext> options) : base(options) { }
-
         public DbSet<User> Users { get; set; }
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             foreach (var entry in ChangeTracker.Entries<BaseDomainModel>())
