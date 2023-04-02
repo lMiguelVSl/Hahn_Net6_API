@@ -20,7 +20,7 @@ namespace Hahn.DDD.Application.Features.Users.Commands.DeleteUser
             _logger = logger;
         }
 
-        public async Task<Unit> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
+        public async Task Handle(DeleteUserCommand request, CancellationToken cancellationToken)
         {
             var getUser = await _userRepository.GetByIdAsync(request.Id);
             if (getUser == null)
@@ -31,8 +31,6 @@ namespace Hahn.DDD.Application.Features.Users.Commands.DeleteUser
 
             await _userRepository.DeleteAsync(getUser);
             _logger.LogInformation($"User with id: {request.Id} was Deleted successfully");
-
-            return Unit.Value;
         }
     }
 }

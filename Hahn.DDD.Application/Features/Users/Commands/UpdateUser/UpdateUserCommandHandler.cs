@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Hahn.DDD.Application.Features.Users.Commands.UpdateUser
 {
-    public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand>
+    public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, int>
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
@@ -20,7 +20,7 @@ namespace Hahn.DDD.Application.Features.Users.Commands.UpdateUser
             _logger = logger;
         }
 
-        public async Task<Unit> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
         {
             var getUser = await _userRepository.GetByIdAsync(request.Id);
             if (getUser == null)
@@ -34,7 +34,7 @@ namespace Hahn.DDD.Application.Features.Users.Commands.UpdateUser
 
             _logger.LogInformation($"User with id: {request.Id} was updated");
 
-            return Unit.Value;
+            return getUser.Id;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Hahn.DDD.Application.Features.Users.Commands.CreateUser;
+using Hahn.DDD.Application.Features.Users.Commands.UpdateUser;
 using Hahn.DDD.Application.Features.Users.Queries.GetUserList;
 using Hahn.DDD.Domain;
 
@@ -11,6 +12,7 @@ namespace Hahn.DDD.Application.Mappings
         {
             CreateMap<User, UserVm>();
             CreateMap<CreateUserCommand,User>();
+            CreateMap<UpdateUserCommand,User>();
         }
     }
 }

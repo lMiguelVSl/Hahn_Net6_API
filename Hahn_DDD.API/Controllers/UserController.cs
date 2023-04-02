@@ -39,10 +39,10 @@ namespace Hahn.DDD.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesDefaultResponseType]
-        public async Task<ActionResult> UpdateUser([FromBody] UpdateUserCommand command)
+        public async Task<ActionResult<int>> UpdateUser([FromBody] UpdateUserCommand command)
         {
-            await _mediator.Send(command);
-            return NoContent();
+            var userId = await _mediator.Send(command);
+            return userId;
         }
 
         [HttpDelete(Name = "DeleteUser")]
