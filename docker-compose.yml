@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hahn.ddd.api:
+    image: ${DOCKER_REGISTRY-}hahndddapi
+    build:
+      context: .
+      dockerfile: Hahn_DDD.API/Dockerfile
