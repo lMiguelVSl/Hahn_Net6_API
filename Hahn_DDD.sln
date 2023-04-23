@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hahn.DDD.Infrastructure", "
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BC60F286-E52F-4503-AD71-9FD342A94CDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hahn.DDD.Identity", "..\Hahn.DDD.Identity\Hahn.DDD.Identity.csproj", "{19492145-3F5E-48C0-9DF0-17743B90D3F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{BC60F286-E52F-4503-AD71-9FD342A94CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC60F286-E52F-4503-AD71-9FD342A94CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC60F286-E52F-4503-AD71-9FD342A94CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19492145-3F5E-48C0-9DF0-17743B90D3F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19492145-3F5E-48C0-9DF0-17743B90D3F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19492145-3F5E-48C0-9DF0-17743B90D3F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19492145-3F5E-48C0-9DF0-17743B90D3F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{CF66D963-4B55-4962-8615-A3D4CB81774D} = {16D11207-8230-439B-BFD1-D729080A99F0}
 		{4698D5FE-4684-4065-83F2-A723BF1A4F09} = {16D11207-8230-439B-BFD1-D729080A99F0}
 		{9C8825C0-6E6E-485D-B39A-9D79714DFDC2} = {D4CC38D4-C2EB-4B50-BF26-FDF2F616BB1F}
+		{19492145-3F5E-48C0-9DF0-17743B90D3F4} = {D4CC38D4-C2EB-4B50-BF26-FDF2F616BB1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AB3DC4E-2F59-4A39-8067-D755ACC82CA0}
